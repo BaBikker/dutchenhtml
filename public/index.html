@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl" id="html-lang">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dutchen Aanmelden</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <script src="function.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-KD4e/kZQnZth1+QvE5usRINvl6OLQ3P6tcD7s/CwBpny5h9h+t8S5WIRKFVUtRcH"
+    crossorigin="anonymous"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-5/6XlZsd+ZcdklMEp/J2J7aJupK3sd4+Qx+ib10/lFQv2V/pqPCi2rhgjCJWRzDn"
+    crossorigin="anonymous"></script> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://www.dutchen.com/favicon.ico">
+</head>
+
+
+<script>
+  function changeLanguage() {
+    var selectedLanguage = document.getElementById("language-select").value;
+
+    document.getElementById("html-lang").setAttribute("lang", selectedLanguage);
+
+    var welcomeHeading = document.getElementById("welcome-heading");
+    var welcomeText = document.getElementById("welcome-text");
+    var firstNameLabel = document.getElementById("inputfname");
+    var lastNameLabel = document.getElementById("inputlname");
+    var emailLabel = document.getElementById("inputemail");
+    var streetLabel = document.getElementById("inputstreetname");
+    var zipCodeLabel = document.getElementById("inputzipcode");
+    var cityLabel = document.getElementById("inputcityname");
+    var startDateLabel = document.getElementById("inputstartdate");
+    var endDateLabel = document.getElementById("inputenddate");
+    var buttonLabel = document.getElementById("buttontext");
+
+    if (selectedLanguage === "nl") {
+      welcomeHeading.textContent = "Welkom bij de Dutchen aanmeldpagina";
+      welcomeText.textContent = "Gelieve hier uw gegevens achter te laten zodat u een account aan kunt maken op mijn Dutchen om van uw verblijf een nog onvergetelijkere ervaring te maken!";
+      firstNameLabel.textContent = "Voornaam:";
+      lastNameLabel.textContent = "Achternaam:";
+      emailLabel.textContent = "Email:";
+      streetLabel.textContent = "Straatnaam + huisnummer:";
+      zipCodeLabel.textContent = "Postcode:";
+      cityLabel.textContent = "Plaatsnaam:";
+      startDateLabel.textContent = "Startdatum reservering:";
+      endDateLabel.textContent = "Einddatum reservering:";
+      buttonLabel.textContent = "Aanmelden";
+    } else if (selectedLanguage === "en") {
+      welcomeHeading.textContent = "Welcome to the Dutchen signup page";
+      welcomeText.textContent = "Please leave your details here so that you can create an account on my Dutchen to make your stay an even more unforgettable experience!";
+      firstNameLabel.textContent = "First name:";
+      lastNameLabel.textContent = "Last name:";
+      emailLabel.textContent = "Email:";
+      streetLabel.textContent = "Street name + house number:";
+      zipCodeLabel.textContent = "Zip code:";
+      cityLabel.textContent = "City:";
+      startDateLabel.textContent = "Start date of reservation:";
+      endDateLabel.textContent = "End date of reservation:";
+      buttonLabel.textContent = "Sign Up";
+    } else if (selectedLanguage === "de") {
+      welcomeHeading.textContent = "Willkommen auf der Dutchen-Registrierungsseite";
+      welcomeText.textContent = "Bitte hinterlassen Sie hier Ihre Daten, damit Sie ein Konto bei my Dutchen erstellen und Ihren Aufenthalt zu einem noch unvergesslicheren Erlebnis machen können!";
+      firstNameLabel.textContent = "Vorname:";
+      lastNameLabel.textContent = "Nachname:";
+      emailLabel.textContent = "Email:";
+      streetLabel.textContent = "Straße + Hausnummer:";
+      zipCodeLabel.textContent = "Postleitzahl:";
+      cityLabel.textContent = "Stadt:";
+      startDateLabel.textContent = "Startdatum der Reservierung:";
+      endDateLabel.textContent = "Enddatum der Reservierung:";
+       buttonLabel.textContent = "Anmeldung";
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("language-select").addEventListener("change", changeLanguage);
+    changeLanguage();
+  });
+</script>
+
+
+  
+  
+  
+  <body>
+    <nav class="navbar navbar-dark sticky-top">
+      <div class="container-fluid">
+        <a href="#">
+          <img src="https://www.dutchen.com/img/DutchenLogo.svg" class="logonav" alt="dutchen logo">
+        </a>
+      </div>
+      <select id="language-select">
+        <option value="nl">NL</option>
+        <option value="en">EN</option>
+        <option value="de">DE</option>
+      </select>
+    </nav>
+    <div class="welkomtekst">
+      <h1 id="welcome-heading">Welkom bij de Dutchen aanmeldpagina</h1>
+      <p id="welcome-text">Gelieve hier uw gegevens achter te laten zodat u een account aan kunt maken op mijn Dutchen
+        om van uw verblijf een nog onvergetelijkere ervaring te maken!</p>
+    </div>
+    <div class="imgsize">
+      <div class="txtimg"></div>
+      <img class="kunstwerk"
+        src="https://www.dutchen.com/files/8/3/1/1/4/Dutchen-Artwork-1-Website-Def.jpg?height=615&width=1440&mode=crop&converttowebp=0"
+        alt="dutchenvakantiefoto">
+    </div>
+    <div class="container" id="formulier">
+      <form class="row g-3" action="/" method="post">
+        <div class="col-md-6">
+          <label for="fname" id="inputfname">Voornaam:</label>
+          <input type="text" class="form-control" id="fname" name="fname" required>
+        </div>
+        <div class="col-md-6">
+          <label for="lname" id="inputlname">Achternaam:</label>
+          <input type="text" class="form-control" id="lname" name="lname" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label" id="inputemail">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="streetname" class="form-label" id="inputstreetname">Straatnaam + huisnummer:</label>
+          <input type="text" class="form-control" id="streetname" name="streetname" required>
+        </div>
+        <div class="col-md-2">
+          <label for="zipcode" class="form-label" id="inputzipcode">Postcode</label>
+          <input type="text" class="form-control" id="zipcode" name="zipcode" required>
+        </div>
+        <div class="col-md-6">
+          <label for="city" id="inputcityname" class="form-label">Plaatsnaam:</label>
+          <input type="text" class="form-control" id="city" name="city" required>
+        </div>
+        <div class="col-md-5">
+          <label for="startdate" id="inputstartdate">Startdatum reservering:</label>
+          <input type="date" id="startdate" min="2023-01-01" max="2025-01-01" name="startdate" required>
+        </div>
+        <div class="col-md-6">
+          <label for="enddate" id="inputenddate">Einddatum reservering:</label>
+          <input type="date" id="enddate" min="2023-01-01" max="2025-01-01" name="enddate" required>
+        </div>
+        <div class="col-md-12 center">
+          <button type="submit" class="btn btn-md btn-dark" id="buttontext">Aanmelden</button>
+        </div>
+      </form>
+   
+    </div>

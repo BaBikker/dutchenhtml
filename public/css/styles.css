@@ -1,0 +1,122 @@
+
+
+nav {
+    height: 75px;
+    margin: 0 0 0 0;
+    padding: 0;
+    background-color: black;
+}
+
+.logonav {
+    height: 50%;
+    width: auto;
+    margin: auto;
+}
+
+.welkomtekst {
+    padding-top: 50px;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#formulier {
+    width: 75%;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 50px;
+}
+
+label {
+    padding: 5px;
+}
+
+.container {
+    align-items: center;
+    background-size: cover;
+}
+
+.achtergrond {
+    background: black;
+}
+
+
+footer {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ft {
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.av {
+    color: black;
+}
+
+.txtimg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: auto;
+}
+
+.imgsize {
+    padding-top: 15px;
+    margin: auto;
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+  .imgtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .nom {
+    margin: 0;
+    padding: 0;
+  }
+
+  .pagefiller{
+    height: 80vh;
+  }
