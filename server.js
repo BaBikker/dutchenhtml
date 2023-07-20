@@ -6,6 +6,8 @@ const port = 3000;
 app.use(express.json());       
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(__dirname + '/public'));
+
+
  
 
 app.get('/',function(req,res) {
@@ -29,9 +31,11 @@ app.post('/', (req, res) => {
     };
 
     const formObject = JSON.stringify(formData);
-    res.redirect('/success.html');
+    res.redirect('/success.html'); 
     console.log(formObject);
   });
+
+
 
  
 
