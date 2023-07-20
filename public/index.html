@@ -87,23 +87,19 @@
     changeLanguage();
   });
 </script>
-
-
-  
-  
-  
-  <body>
+<body>
     <nav class="navbar navbar-dark sticky-top">
       <div class="container-fluid">
         <a href="#">
           <img src="https://www.dutchen.com/img/DutchenLogo.svg" class="logonav" alt="dutchen logo">
         </a>
+        <select id="language-select">
+          <option value="nl">NL</option>
+          <option value="en">EN</option>
+          <option value="de">DE</option>
+        </select>
       </div>
-      <select id="language-select">
-        <option value="nl">NL</option>
-        <option value="en">EN</option>
-        <option value="de">DE</option>
-      </select>
+
     </nav>
     <div class="welkomtekst">
       <h1 id="welcome-heading">Welkom bij de Dutchen aanmeldpagina</h1>
@@ -156,3 +152,4 @@
       </form>
    
     </div>
+</body>
