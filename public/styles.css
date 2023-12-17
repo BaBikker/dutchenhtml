@@ -5,19 +5,55 @@ body {
     padding: 0;
 }
 
-h1 {
-    font-weight: bold;
-    margin-bottom: 50px;
+svg {
+  margin-bottom: 30px;
+}
+.texta {
+  color: blue;
 }
 
-h2 {
-    margin-bottom: 20px;
-    font-weight: bold;
+.imgcenter {
+  margin-top: 200px;
+}
+
+.nav-link {
+  font-size: 1.2em;
+}
+
+.centerbanner {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  max-width: 40%;
+  height: auto;
+}
+
+.bannerHome {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.logonav {
+  height: 60px;
+  width: auto;
 }
 
 #welkomtekst {
 text-align: center;
-margin-bottom: 50px;
+margin-top: 25px;
+}
+
+.contact-wrapper {
+    margin-top: 25px;
 }
 
 nav{
@@ -25,9 +61,17 @@ nav{
     padding-top: 0;
 }
 
+.top {
+    margin-top: 25px;
+}
 
 #formulier {
-    width: 75%;
+    width: 80%;
+}
+
+.marketing {
+align-items: center;
+margin-top: 25px;
 }
 
 .hoofd {
@@ -48,24 +92,21 @@ nav{
     justify-content: center;
     width: 80%;
     margin: auto;
+    margin-top: 20px;
 }
 
 
-img{
-    width: 100%;
-    height: auto;
+img {
+  width: 100%;
+  height: auto;
 }
 
-
-.contact-wrapper {
-    align-items: center;
-    width: 80%;
-}
 
 footer {
     background-color:black;
     text-align: center;
     color: white;
+    margin-top: 5rem;
 }
 
 .foot{
@@ -75,7 +116,9 @@ footer {
     color: white;
 }
 
-
+.dik{
+    font-weight: bolder;
+}
 
 
 
